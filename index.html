@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Guru — An authentic Indian restaurant serving rich curries, tandoor delights, and traditional flavors made with the finest spices. Order online via WhatsApp." />
+  <meta name="keywords" content="Indian restaurant, biryani, curry, tandoor, desi food, order online, WhatsApp, Bengaluru" />
+  <meta property="og:title" content="Guru — Taste the Difference" />
+  <meta property="og:description" content="Guru — Handcrafted dishes made with love. Dine in, take out, or order on WhatsApp." />
+  <meta property="og:type" content="website" />
+  <title>Guru — Taste the Difference</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     NAVBAR
+════════════════════════════════════════════════════════════ -->
+<nav id="navbar" aria-label="Main navigation">
+  <div class="container nav-inner">
+
+    <a href="#hero" class="logo" aria-label="Guru Home">
+      <span class="logo-icon">🍽️</span>
+      <span id="restaurant-name">Savoria</span>
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#hero"     class="active">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#location">Location</a></li>
+    </ul>
+
+    <a href="#" class="btn btn-whatsapp nav-order-btn wa-link" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+      Order Now
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+  </div>
+</nav>
+
+<!-- Mobile Nav Overlay -->
+<nav id="mobile-nav" role="dialog" aria-label="Mobile navigation" aria-modal="true">
+  <a href="#hero">Home</a>
+  <a href="#about">About</a>
+  <a href="#menu">Menu</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Contact</a>
+  <a href="#location">📍 Location</a>
+  <a href="#" class="wa-link btn btn-whatsapp" target="_blank" rel="noopener">
+    🟢 Order on WhatsApp
+  </a>
+</nav>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     HERO SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="hero" aria-label="Hero">
+  <div class="hero-bg" role="img" aria-label="Restaurant interior background"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">⭐ Award Winning Restaurant</div>
+      <h1 class="hero-title">
+        Every Bite Tells<br><span id="restaurant-tagline">a Story</span>
+      </h1>
+      <p class="hero-description" id="hero-description">
+        A cozy fine-dining restaurant crafted with love, serving authentic flavors made from the freshest locally sourced ingredients.
+      </p>
+      <div class="hero-actions">
+        <a href="#menu" class="btn btn-primary" aria-label="View our menu">
+          🍽️ View Our Menu
+        </a>
+        <a href="#" class="btn btn-whatsapp wa-link" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Order on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="hero-scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FEATURES BAR
+════════════════════════════════════════════════════════════ -->
+<div class="features-bar" aria-label="Key features">
+  <div class="container">
+    <div class="features-list">
+      <div class="feature-item"><span>👨‍🍳</span><span>Expert Chefs</span></div>
+      <div class="feature-item"><span>🌿</span><span>Fresh Ingredients</span></div>
+      <div class="feature-item"><span>🚀</span><span>Quick Service</span></div>
+      <div class="feature-item"><span>💚</span><span>WhatsApp Ordering</span></div>
+      <div class="feature-item"><span>⭐</span><span>5-Star Rated</span></div>
+    </div>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     ABOUT SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="about" aria-labelledby="about-title">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <img src="gallery_interior.png" alt="Guru restaurant interior — warm, cozy ambiance" loading="lazy" />
+        <div class="about-badge">Est. 2015</div>
+      </div>
+      <div class="about-text reveal">
+        <span class="section-tag">Our Story</span>
+        <h2 class="section-title" id="about-title">More than a Meal — an Experience</h2>
+        <p>
+          Born from a passion for real, honest food, Guru is a place where every dish is prepared with care and served with heart. We believe that great food is the language of connection.
+        </p>
+        <p>
+          Our chefs are masters of traditional Indian cuisine — from slow-cooked curries and tandoor specialties to fragrant biryanis and decadent sweets — using hand-ground spices and family recipes passed down through generations.
+        </p>
+        <p>
+          Whether you're celebrating a special occasion or enjoying a hearty family meal, we promise an authentic Indian dining experience that warms your soul.
+        </p>
+        <div class="about-stats" role="list">
+          <div class="stat-item" role="listitem">
+            <div class="stat-num">10+</div>
+            <div class="stat-label">Years of Excellence</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-num">50+</div>
+            <div class="stat-label">Menu Items</div>
+          </div>
+          <div class="stat-item" role="listitem">
+            <div class="stat-num">10K+</div>
+            <div class="stat-label">Happy Guests</div>
+          </div>
+        </div>
+        <a href="#menu" class="btn btn-primary" aria-label="Browse our menu">Explore Menu →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     MENU SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="menu" aria-labelledby="menu-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Our Menu</span>
+      <h2 class="section-title" id="menu-title">Crafted with Passion</h2>
+      <p class="section-subtitle">Fresh, flavorful, and made-to-order — something for every craving</p>
+      <div class="divider"></div>
+    </div>
+    <div class="menu-tabs" id="menu-tabs" role="tablist" aria-label="Menu categories"></div>
+    <div class="menu-grid" id="menu-grid" role="list" aria-live="polite"></div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     GALLERY SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="gallery" aria-labelledby="gallery-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Gallery</span>
+      <h2 class="section-title" id="gallery-title">A Feast for the Eyes</h2>
+      <p class="section-subtitle">Experience Guru before you arrive</p>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-masonry">
+      <div class="gallery-item reveal">
+        <img src="gallery_interior.png" alt="Guru restaurant interior" loading="lazy" />
+      </div>
+      <div class="gallery-item reveal">
+        <img src="menu_burger.png" alt="Guru Butter Chicken" loading="lazy" />
+      </div>
+      <div class="gallery-item reveal">
+        <img src="gallery_food1.png" alt="Fresh salad bowl" loading="lazy" />
+      </div>
+      <div class="gallery-item reveal">
+        <img src="menu_pasta.png" alt="Pasta Pomodoro" loading="lazy" />
+      </div>
+      <div class="gallery-item reveal">
+        <img src="menu_dessert.png" alt="Chocolate Lava Cake dessert" loading="lazy" />
+      </div>
+      <div class="gallery-item reveal">
+        <img src="menu_drinks.png" alt="Refreshing cafe drinks" loading="lazy" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div id="lightbox" role="dialog" aria-label="Image lightbox" aria-modal="true">
+  <button id="lightbox-close" aria-label="Close lightbox">✕</button>
+  <img id="lightbox-img" src="" alt="Gallery image enlarged view" />
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     CONTACT SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="contact" aria-labelledby="contact-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Contact Us</span>
+      <h2 class="section-title" id="contact-title">We'd Love to Hear from You</h2>
+      <p class="section-subtitle">Reach out to us anytime — we're just a WhatsApp away</p>
+      <div class="divider"></div>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-cards">
+        <div class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">📞</div>
+          <div>
+            <h4 id="phone-label">Phone</h4>
+            <a href="tel:" id="contact-phone" aria-labelledby="phone-label">+1 234 567 8900</a>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">📍</div>
+          <div>
+            <h4>Address</h4>
+            <p id="contact-address">123 Gourmet Lane, New York</p>
+          </div>
+        </div>
+        <div class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">🕐</div>
+          <div>
+            <h4>Opening Hours</h4>
+            <p id="contact-hours-weekdays">Mon – Fri: 11:00 AM – 10:00 PM</p>
+            <p id="contact-hours-weekend">Sat – Sun: 10:00 AM – 11:00 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-whatsapp-card reveal">
+        <div style="font-size:3.5rem;margin-bottom:1rem" aria-hidden="true">💬</div>
+        <h3>Order on WhatsApp</h3>
+        <p>
+          The easiest way to order! Browse our menu, pick your favorites, and send us a message. We'll confirm your order in minutes.
+        </p>
+        <a href="#" class="btn btn-whatsapp wa-link" target="_blank" rel="noopener" aria-label="Order via WhatsApp">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          Chat on WhatsApp
+        </a>
+        <p style="margin-top:1.2rem;font-size:.8rem;color:rgba(255,255,255,.4)">
+          Average response time: &lt;5 minutes ⚡
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     GOOGLE MAPS SECTION
+════════════════════════════════════════════════════════════ -->
+<section id="location" aria-labelledby="location-title">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Find Us</span>
+      <h2 class="section-title" id="location-title">Come Visit Us</h2>
+      <p class="section-subtitle">We're conveniently located in the heart of the city</p>
+      <div class="divider"></div>
+    </div>
+    <div class="map-wrap reveal">
+      <iframe
+        id="map-iframe"
+        title="Guru restaurant location on Google Maps"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.6175675673745!2d-73.98560738459447!3d40.74881547932754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259af15e3b09b%3A0x1b5ffc13b6e80ef6!2sEmpire%20State%20Building!5e0!3m2!1sen!2sus!4v1622196896848!5m2!1sen!2sus"
+        allowfullscreen
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     FOOTER
+════════════════════════════════════════════════════════════ -->
+<footer>
+  <p>
+    &copy; <span id="year"></span>
+    <strong id="footer-name">Guru</strong>. All rights reserved.
+    &nbsp;|&nbsp; Made with ❤️ for great food &amp; great people.
+  </p>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</footer>
+
+<!-- Back to Top -->
+<button id="back-top" aria-label="Back to top">↑</button>
+
+<!-- Scripts -->
+<script src="menu-data.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
